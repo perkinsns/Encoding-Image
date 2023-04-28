@@ -1,0 +1,63 @@
+Script started on Thu 01 Apr 2021 03:33:41 PM EDT
+[?1034h[31m[nsperkin@athena [32m~/EECS402/BackUpCode[31m]$ [0mexitvalgrind --leak-check=full ./proj3.exe deerNoMod.ppmexit[Kvalgrind --leak-check=full ./proj3.exe deerNoMod.ppm
+==20970== Memcheck, a memory error detector
+==20970== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20970== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20970== Command: ./proj3.exe deerNoMod.ppm
+==20970== 
+Image read successful: Yes
+1. Encode a message from file
+2. Perform decode
+3. Write current image to file
+4. Exit the program
+Enter your choice: 1
+Enter name of file containing message:
+../EECS402.txt
+Enter row and column for message placement:
+1 1
+Encoding Message
+88
+46
+Message encode successful: Yes
+1. Encode a message from file
+2. Perform decode
+3. Write current image to file
+4. Exit the program
+Enter your choice: 2
+Image modified to decoded image contents
+1. Encode a message from file
+2. Perform decode
+3. Write current image to file
+4. Exit the program
+Enter your choice: 3
+Enter name of file to write image to:
+deo coded.ppm
+Image write successful: Yes
+1. Encode a message from file
+2. Perform decode
+3. Write current image to file
+4. Exit the program
+Enter your choice: 4
+Thanks for using this program!
+==20970== 
+==20970== HEAP SUMMARY:
+==20970==     in use at exit: 3,268,718 bytes in 456 blocks
+==20970==   total heap usage: 540,475 allocs, 540,019 frees, 157,176,937 bytes allocated
+==20970== 
+==20970== LEAK SUMMARY:
+==20970==    definitely lost: 0 bytes in 0 blocks
+==20970==    indirectly lost: 0 bytes in 0 blocks
+==20970==      possibly lost: 0 bytes in 0 blocks
+==20970==    still reachable: 3,268,718 bytes in 456 blocks
+==20970==                       of which reachable via heuristic:
+==20970==                         stdstring          : 16,358 bytes in 3 blocks
+==20970==         suppressed: 0 bytes in 0 blocks
+==20970== Reachable blocks (those to which a pointer was found) are not shown.
+==20970== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==20970== 
+==20970== For lists of detected and suppressed errors, rerun with: -s
+==20970== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[31m[nsperkin@athena [32m~/EECS402/BackUpCode[31m]$ [0mexit
+exit
+
+Script done on Thu 01 Apr 2021 03:34:54 PM EDT
